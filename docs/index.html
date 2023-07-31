@@ -24,7 +24,11 @@ var isMobile = {
 
     };
 
-if( isMobile.iOS() ) {
+if ( isMobile.Android() ) {
+        // document.location.href = "https://github.com/nabito/xr-namecard/raw/main/3d-model/ship_in_a_bottle.glb";
+        document.location.href = "intent://arvr.google.com/scene-viewer/1.0?file=https://github.com/nabito/xr-namecard/raw/main/3d-model/ship_in_a_bottle.glb#Intent;scheme=https;package=com.google.android.googlequicksearchbox;action=android.intent.action.VIEW;S.browser_fallback_url=https://developers.google.com/ar;end;"
+}
+else if( isMobile.iOS() ) {
         document.location.href = "https://github.com/nabito/xr-namecard/raw/main/3d-model/ship_in_a_bottle.usdz";
 }
 </script>
@@ -32,8 +36,6 @@ if( isMobile.iOS() ) {
 <body>
 
 <h1>Homu Homu Coffee</h1>
-
-<a href="intent://arvr.google.com/scene-viewer/1.0?file=https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Models/master/2.0/Avocado/glTF/Avocado.gltf#Intent;scheme=https;package=com.google.android.googlequicksearchbox;action=android.intent.action.VIEW;S.browser_fallback_url=https://developers.google.com/ar;end;">Android Click Here</a>
 
 </body>
 </html>
