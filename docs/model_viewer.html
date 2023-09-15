@@ -1,9 +1,7 @@
 <!-- Import the component -->
-<script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.1.1/model-viewer.min.js"></script>
-
-
 <model-viewer id="pickMaterial" shadow-intensity="1" camera-controls touch-action="pan-y" disable-tap src="https://github.com/nabito/xr-namecard/raw/main/3d-model/Buggy.glb" ar ar-modes="webxr scene-viewer" scale="0.001 0.001 0.001" alt="A Material Picking Example">
 </model-viewer>
+
 <script type="module">
 const modelViewer = document.querySelector("model-viewer#pickMaterial");
 
@@ -19,6 +17,8 @@ modelViewer.addEventListener("load", () => {
   modelViewer.addEventListener("click", changeColor);
 });
 </script>
+
+
 <script>
 /**
  * This is not an actual script, but an API declaration made prettier with JS syntax highlighting.
@@ -166,3 +166,5 @@ enum MaxFilter {
   Linear = 9729,
 }
 </script>
+
+<script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.1.1/model-viewer.min.js"></script>
