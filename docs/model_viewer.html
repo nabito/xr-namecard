@@ -1,5 +1,6 @@
 <!-- Import the component -->
-<model-viewer id="pickMaterial" shadow-intensity="1" camera-controls touch-action="pan-y" disable-tap src="Buggy.glb" ar ar-modes="webxr scene-viewer" scale="0.001 0.001 0.001" alt="A Material Picking Example">
+
+<model-viewer id="pickMaterial" shadow-intensity="1" camera-controls touch-action="pan-y" disable-tap src="cat_with_button.glb" ar ar-modes="webxr scene-viewer" scale="0.001 0.001 0.001" alt="A Material Picking Example">
 </model-viewer>
 
 <script type="module">
@@ -12,7 +13,10 @@ modelViewer.addEventListener("load", () => {
       material.pbrMetallicRoughness.
         setBaseColorFactor([Math.random(), Math.random(), Math.random()]);
 
-      document.location.href = "https://www.google.com"
+      window.alert(material.name)
+      console.log(material)
+
+      // document.location.href = "https://www.google.com"
     }
   };
 
