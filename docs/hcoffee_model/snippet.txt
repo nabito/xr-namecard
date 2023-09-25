@@ -1,0 +1,14 @@
+<model-viewer src="hcoffee.glb" ar ar-modes="scene-viewer webxr quick-look" camera-controls poster="poster.webp" shadow-intensity="1" autoplay animation-name="Armature|mixamo.com|Layer0.001" environment-image="legacy">
+    <button class="Hotspot" slot="hotspot-4" data-surface="30 3 473 323 14 0.148 0.750 0.102" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">Homu Homu Coffee Shop</div>
+    </button>
+    <div class="progress-bar hide" slot="progress-bar">
+        <div class="update-bar"></div>
+    </div>
+    <button slot="ar-button" id="ar-button">
+        View in your space
+    </button>
+    <div id="ar-prompt">
+        <img src="https://modelviewer.dev/shared-assets/icons/hand.png">
+    </div>
+</model-viewer>
